@@ -1,7 +1,7 @@
 from PyQt5.QtWidgets import *
 from PyQt5.QtGui import *
-from PyQt5.QtCore import * 
-from PyQt5.QtWebEngineWidgets import * 
+from PyQt5.QtCore import *
+from PyQt5.QtWebEngineWidgets import *
 
 class SandBrowser(QMainWindow):
 
@@ -30,3 +30,10 @@ class SandBrowser(QMainWindow):
          self.horizontal.addWidget(self.go_btn)
          self.horizontal.addWidget(self.back_btn)
          self.horizontal.addWidget(self.forward_btn)
+
+         self.browser = QWebEngineView()
+
+         self.layout.addLayout(self.horizonal)
+         self.layout.addWidget(self.browser)
+
+         self.browser.setUrl(QUrl("https://duckduckgo.com/"))
