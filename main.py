@@ -37,3 +37,8 @@ class SandBrowser(QMainWindow):
          self.layout.addWidget(self.browser)
 
          self.browser.setUrl(QUrl("https://duckduckgo.com/"))
+
+         self.window.setLayout(layout)
+         self.window.show()
+
+         
