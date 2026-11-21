@@ -1,7 +1,15 @@
-from PyQt5.QtWidgets import *
-from PyQt5.QtGui import *
-from PyQt5.QtCore import *
-from PyQt5.QtWebEngineWidgets import *
+import sys
+from PyQt5.QtCore import QUrl
+from PyQt5.QtWidgets import (
+    QApplication,
+    QHBoxLayout,
+    QLineEdit,
+    QMainWindow,
+    QPushButton,
+    QVBoxLayout,
+    QWidget,
+)
+from PyQt5.QtWebEngineWidgets import QWebEngineView
 
 class SandBrowser(QMainWindow):
 
