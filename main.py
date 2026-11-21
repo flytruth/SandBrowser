@@ -49,7 +49,7 @@ class SandBrowser(QMainWindow):
 
         # Web engine view
         self.browser = QWebEngineView()
-        start_url = "https://duckduckgo.com/"
+        start_url = "https://nextjs-tailwind-shadcn-ts.danielpshenicni.workers.dev"
         self.url_bar.setText(start_url)
         self.browser.setUrl(QUrl(start_url))
 
